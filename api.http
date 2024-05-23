@@ -1,0 +1,31 @@
+### Crear producto
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name":"COMPO PC GAMER ASUS TUF + Monitor",
+  "price":"3500"
+}
+
+### Obtener productos
+GET http://localhost:5000/api/products
+
+
+### Obtener producto por id
+GET http://localhost:5000/api/products/5
+
+### Actualizar producto por id
+PUT http://localhost:5000/api/products/1
+Content-Type: application/json
+
+{
+  "name":"update",
+  "price":100,
+  "availability":false
+}
+
+### Actualizar estado de producto
+PATCH  http://localhost:5000/api/products/1
+
+### Delete producto
+DELETE  http://localhost:5000/api/products/1
